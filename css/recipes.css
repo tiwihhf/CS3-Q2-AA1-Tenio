@@ -1,0 +1,86 @@
+#info {
+  background-color:#404258;
+  min-width:100vw;
+  min-height:100vh;
+}
+
+#intro {
+  /* BOX PROPERTIES */
+  min-width:100vw;
+  min-height:30vh;
+  /*----------------------*/
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.content,
+#specifications {
+  min-width:50vw;
+  min-height:50vh;
+}
+
+.content {
+  padding:5em;
+}
+
+#specifications {
+  display:flex;
+  column-gap:5em;
+  align-items:flex-start;
+  justify-content:center;
+  padding:0 5em;
+}
+
+/* INTRO */
+/* LEFT SIDE [IMAGE] */
+.img-container {
+  width:100%;
+  height:inherit;
+  padding:1em;
+  border-radius:32px;
+  background-color:#626A92;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.content img {
+  object-fit:scale-down;
+  object-position:center;
+  height:40vh;
+  width:auto;
+}
+
+/* RIGHT SIDE [TEXT] */
+.content.text {
+  display:flex;
+  flex-direction:column;
+  row-gap:1em;
+}
+
+.text p {
+  padding-right:5em;
+  line-height:2em;
+}
+
+/* DETAILS + PRICES */
+.sizes,
+.prices {
+  width:50%;
+  height:inherit;
+}
+
+.details ul {
+  line-height:3em;
+}
+
+.details {
+  display:flex;
+  justify-content:space-between;
+}
+
+/* FOOTER */
+footer {
+  background-color:#626A92;
+}

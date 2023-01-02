@@ -1,0 +1,102 @@
+body {
+  background-color:#404258;
+}
+
+#navbar li:nth-child(3) {
+  text-decoration:underline;
+}
+
+/* FIGURE */
+figure {
+  /* BOX PROPERTIES */
+  min-width:100vw;
+  min-height:90vh;
+  /*---------------------*/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.pic-container {
+  /* BOX PROPERTIES */
+  min-width:85vw;
+  min-height:70vh;
+  /* BACKGROUND */
+  background-color:#50577A;
+  /*---------------------*/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:40px;
+}
+
+/* HERE IN OUR CAFE... */
+#here {
+  padding:0 5em;
+  display:flex;
+  flex-direction:column;
+  row-gap:1em;
+}
+
+#here p {
+  line-height:2em;
+}
+
+/* DELIVERY + LOCATIONS */
+.content {
+  min-width:50vw;
+  min-height:50vh;
+  padding:0 5em;
+}
+
+#delivery,
+#locations {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.content.image {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.content.text {
+  display:flex;
+  flex-direction:column;
+  row-gap:1em;
+}
+
+.text p {
+  padding-right:5em;
+  line-height:2em;
+}
+
+.content img {
+  object-fit:scale-down;
+  object-position:center;
+  height:45vh;
+  width:auto;
+}
+
+#address {
+  font-style:italic;
+}
+
+/* DELIVERY */
+#delivery {
+  margin-top:4em;
+  margin-bottom:2em;
+}
+
+#locations {
+  margin-top:2em;
+  margin-bottom:5em;
+  flex-direction:row-reverse;
+}
+
+/* FOOTER */
+footer {
+  background:#50577A;
+}

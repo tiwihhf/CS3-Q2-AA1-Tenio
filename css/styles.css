@@ -1,0 +1,75 @@
+/* MISC */
+body {
+  background-color:#50577A;
+}
+
+#navbar li:nth-child(1) {
+  text-decoration:underline;
+}
+
+.transition {
+  width:100vw;
+  height:auto;
+}
+
+/* FIGURE BACKGROUND */
+figure img {
+  min-width:100vw;
+  height:95vh;
+  object-fit:cover;
+  object-position:bottom;
+}
+
+/* MAIN CONTENT */
+#main {
+  /* BOX PROPERTIES */
+  min-width:100vw;
+  min-height:80vh;
+  /* BACKGROUND */
+  background-color:#50577A;
+  /*----------------------*/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.content {
+  min-width:50vw;
+  min-height:inherit;
+  padding:3em;
+}
+
+/* LEFT SIDE [IMAGE] */
+.content.image {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.content img {
+  object-fit:cover;
+  object-position:center;
+  height:70vh;
+  width:auto;
+}
+
+/* RIGHT SIDE [TEXT] + [VIDEO] */
+.content.text {
+  display:flex;
+  flex-direction:column;
+  row-gap:1em;
+}
+
+.content video {
+  margin-top:-1.5em;
+}
+
+.text p {
+  padding-right:5em;
+  line-height:2em;
+}
+
+/* FOOTER */
+footer {
+  background-color:#404258;
+}

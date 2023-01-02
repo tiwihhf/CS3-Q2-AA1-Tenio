@@ -1,0 +1,168 @@
+body {
+  display:grid;
+  grid-template-columns:50% 50%;
+}
+
+#navbar li:nth-child(2) {
+  text-decoration:underline;
+}
+
+/* HEADER */
+header {
+  grid-column-start:1;
+  grid-column-end:3;
+}
+
+/* WELCOME */
+#welcome {
+  /* BOX PROPERTIES */
+  min-width:100vw;
+  min-height:95vh;
+  grid-column-start:1;
+  grid-column-end:3;
+  /* BACKGROUND */
+  background-image:url("../img/menu-bg5.png");
+  background-position:bottom;
+  background-size:cover;
+  background-repeat:no-repeat;
+  /*----------------*/
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding:3em 5em;
+}
+
+.text-container {
+  /* BOX PROPERTIES */
+  min-width:85vw;
+  min-height:70vh;
+   /* BACKGROUND */
+  background-color:#50577A;
+  border-radius:40px;
+  /*----------------*/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:3em 5em;
+  opacity:0.7;
+}
+
+.text-container p {
+  line-height:2em;
+  font-size:19px;
+  text-align:center;
+  color:#FBE6EF;
+}
+
+/* MENU [WEBSITE] + [PDF] */
+.menu {
+  /* BOX PROPERTIES */
+  min-height:100vh;
+  /* BACKGROUND */
+  background-color:#50577A;
+  /*----------------*/
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+  row-gap:4em;
+}
+
+/* MENU [WEBSITE] */
+#website-ver {
+  padding:3em 4em;
+}
+
+#hot,
+#cold {
+  display:flex;
+  flex-direction:column;
+  row-gap:1.3em;
+}
+
+#cold {
+  padding-bottom:3em;
+}
+
+.beverages {
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+.beverages img {
+  object-fit:contain;
+  object-position:center;
+  height:5em;
+  width:5em;
+}
+
+.image,
+.text {
+  /* BACKGROUND */
+  background-color:#BABFD4;
+  /*----------------*/
+  display:flex;
+  align-items:center;
+}
+
+/* IMAGE */
+.image {
+  min-width:8vw;
+  min-height:8vh;
+  padding:.3em;
+  justify-content:center;
+  border-radius:100%;
+  border:1.5px solid #50577A;
+  position:relative;
+  z-index:5;
+}
+
+/* TEXT */
+.text {
+  /* BOX PROPERTIES */
+  min-width:26vw;
+  min-height:10vh;
+  border-radius:40px;
+  /* DISPLAY */
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  /*----------------*/
+  position:relative;
+  padding:.5em 1.5em .5em 4em;
+  z-index:3;
+  left:-3em;
+}
+
+.text p {
+  color:#49547C;
+  font-style:italic;
+}
+
+.text img {
+  object-fit:cover;
+  object-position:right;
+  height:1em;
+  width:auto;
+}
+
+/* MENU [PDF VER] */
+#pdf-ver {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:3em 4em 3em 0;
+}
+
+#pdf {
+  min-width:40vw;
+  min-height:125vh;
+}
+
+/* FOOTER */
+footer {
+  grid-column-start:1;
+  grid-column-end:3;
+  background-color:#404258;
+}
